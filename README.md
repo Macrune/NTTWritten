@@ -34,7 +34,7 @@ curl -X POST http://localhost:8080/cekAlamat \
 Pencocokan nama tidak membedakan huruf besar/kecil dan mengabaikan spasi berlebih.
 
 ## Soal 2 (optional)
-Lihat `soal2/pseudo.txt`.
+Lihat `soal2/pseudo SOAL 2.txt`.
 
 ## Catatan sertifikat SSL
 Server `alamat.thecloudalert.com` tidak mengirim sertifikat intermediate-nya, sehingga Java
