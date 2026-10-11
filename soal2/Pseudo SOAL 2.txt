@@ -1,0 +1,37 @@
+SOAL 2 - PSEUDO Square
+
+Rule:
+ - N int dengan 2 < N < 10
+ - Persegi N baris x N kolom:
+	Baris peprtama dan akhir : N karakter "="
+	Baris tengah (N-2 baris) : "|" + (N-2) spasi + "|"
+ - Baris gabungan: Seluruh baris persegi disambung menjadi satu baris tanpa pemisah
+
+METHODE square(N)
+	IF (N < 3) THEN
+		PRINT "Nilai terlalu kecil"
+	END IF
+	IF (N > 9) THEN
+		PRINT "NIlai terlalu besar"
+	END IF
+
+	top <- REPEAT("=", N)
+	middle <- "|" + REPEAT(" ", N-2) + "|"
+	
+	square <- top + NEWLINE
+	line <- top
+	FOR 1 to N-2 DO
+		square <- square + middle + NEWLINE
+		line <- line + middle
+	END FOR
+	square <- square + top
+	line <- line + top
+	PRINT square
+	PRINT line
+END METHODE
+	
+	
+	
+	
+	
+	
